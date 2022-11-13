@@ -1,2 +1,3 @@
 # devops-skills-with-GitHub
-all the tools for build Python Pipeline
+Including the tools for build Python Pipeline
+Including Makefile, DevContainers and CodeSpaces
