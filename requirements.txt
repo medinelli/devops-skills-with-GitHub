@@ -1,6 +1,7 @@
-pylint
-click
-pytest
-pytest-cov
-fastapi
-uvicorn
+pylint==2.15.5
+click==8.1.3
+pytest==7.2.0
+pytest-cov==4.0.0
+fastapi==0.86.0
+uvicorn==0.19.0
+black==22.10.0
