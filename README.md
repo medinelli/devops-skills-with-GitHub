@@ -3,3 +3,7 @@
 # devops-skills-with-GitHub
 Including the tools for build Python Pipeline
 Including Makefile, DevContainers and CodeSpaces
+
+## Part2: Automation Text and Filesystems
+
+* dive into pathlib
