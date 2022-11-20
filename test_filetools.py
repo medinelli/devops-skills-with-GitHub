@@ -1,5 +1,7 @@
-from mylib.filetools import find_files, find_pattern_in_file
 import pathlib
+
+from mylib.filetools import find_files, find_pattern_in_file
+
 
 def test_find_files():
     """Test find_files() function"""

@@ -22,7 +22,7 @@ def find_files(directory, pattern, ignore_patterns):
 
 def find_pattern_in_file(path, pattern):
     path = pathlib.Path(path)
-    text = path.read_text()
+    text = path.read_text(encoding='utf-8')
     for i, line in enumerate(text.splitlines(), start=1):
         if pattern in line:
             yield i, line
