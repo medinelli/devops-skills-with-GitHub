@@ -5,7 +5,7 @@
 import pathlib
 
 
-def find_files(directory, pattern, ignore_patterns=[]):
+def find_files(directory, pattern, ignore_patterns):
     directory = pathlib.Path(directory)
 
     for path in directory.glob(pattern):
