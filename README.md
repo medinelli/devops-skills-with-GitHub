@@ -7,3 +7,7 @@ Including Makefile, DevContainers and CodeSpaces
 ## Part2: Automation Text and Filesystems
 
 * dive into pathlib
+
+## Tips
+
+* Way to find a package version : ` pip freeze | grep ipython`
