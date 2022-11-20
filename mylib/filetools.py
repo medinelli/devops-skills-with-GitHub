@@ -14,3 +14,15 @@ def find_files(directory, pattern, ignore_patterns):
                 break
         else:
             yield path
+
+#build a function that reads a file and searches for a pattern
+#use pathlib.Path.read_text() to read the file
+#use string methods to search for the pattern
+#return the line number and the line
+
+def find_pattern_in_file(path, pattern):
+    path = pathlib.Path(path)
+    text = path.read_text()
+    for i, line in enumerate(text.splitlines(), start=1):
+        if pattern in line:
+            yield i, line
