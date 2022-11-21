@@ -18,4 +18,5 @@ def multiply(a, b):
 def divide(a, b):
     return a / b
 
-#create a function called residual
+
+# create a function called residual
