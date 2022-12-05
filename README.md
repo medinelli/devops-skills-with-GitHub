@@ -8,6 +8,18 @@ Including Makefile, DevContainers and CodeSpaces
 
 * dive into pathlib
 
+## Part3: Build Containerized Microservice
+
+
+* Build the container
+
+`docker build .`
+`docker image ls` #find image
+
+* Run the container
+
+`docker run -p 127.0.0.1:8080:8080 <image_id>`
+
 ## Tips
 
 * Way to find a package version : ` pip freeze | grep ipython`

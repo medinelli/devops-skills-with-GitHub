@@ -59,14 +59,14 @@ def find(file, pattern):
     Example:
         ./fileToolsCLI.py find ./mylib/filetools.py "import pathlib"
     """
-    #count the number of times the pattern is found in the file
+    # count the number of times the pattern is found in the file
     count = 0
 
     for line_number, line in find_pattern_in_file(file, pattern):
         count += 1
         # use click colors to highlight the pattern in the file path
         click.echo(click.style(f"{line_number}: {line}", fg="green"))
-    #print the number of times the pattern was found in the file using a different color
+    # print the number of times the pattern was found in the file using a different color
     click.echo(click.style(f"Found {count} matches", fg="red"))
 
 
