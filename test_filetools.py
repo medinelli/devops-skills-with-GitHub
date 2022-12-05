@@ -11,7 +11,8 @@ def test_find_files():
     ignore_patterns = ["test_", "__pycache__"]
     paths = list(find_files(directory, pattern, ignore_patterns))
     assert len(paths) == 4
-    assert (paths[0].name == "main.py") | (paths[0].name == "fileToolsCLI.py")
+    #test that hello.py is in the list
+    assert pathlib.Path("hello.py") in paths
 
 
 def test_find_pattern_in_file():
